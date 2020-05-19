@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+    background: url(city.png) repeat-x 0 100% fixed,
+                linear-gradient(to top, #5080b1, #004e8c) fixed;
+    animation: city 30s linear infinite;
+    -webkit-animation: city 30s linear infinite;
+   }
+   @keyframes city {
+    from { background-position: -1000px 100%, 0 0;}
+    to { background-position: 0 100%, 0 0; }
+   }
+   @-webkit-keyframes city {
+    from { background-position: -1000px 100%, 0 0;}
+    to { background-position: 0 100%, 0 0; }
+   }
+   main {
+    width: 80%;
+    min-height: 800px;
+    display: block;
+    margin: auto;
+    background: rgba(255,255,255,0.6);
+    padding: 20px;
+   }
+</style>
+<body>
+<nav>
+<ul>
+<li id="login">
+<a id="login-trigger" href="file:///C:/Users/Admin/Documents/codesOfSHARAga/work_is_important.html">
+Войти <span>&#x25BC;</span>
+</a>
+<div id="login-content">
+<form>
+<fieldset id="inputs">
+<input id="username" type="email" name="Email" placeholder="Ваш email адрес" required>   
+<input id="password" type="password" name="Password" placeholder="Пароль" required>
+</fieldset>
+<fieldset id="actions">
+<input type="submit" id="submit" value="Войти">
+<label><input type="checkbox" checked="checked"> Запомнить меня</label>
+</fieldset>
+</form>
+</div>                     
+</li>
+<li id="signup">
+<a href="file:///C:/Users/Admin/Documents/codesOfSHARAga/work_is_important.html">Регистрация</a>
+</li>
+</ul>
+</nav>
+</head>
+</body>
+</html>
